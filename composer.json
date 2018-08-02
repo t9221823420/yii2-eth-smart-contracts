@@ -1,0 +1,27 @@
+{
+  "name": "yozh/yii2-eth-smart-contracts",
+  "description": "Description",
+  "type": "yii2-extension",
+  "keywords": ["yii2","extension","eth-smart-contracts"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ivan Kryazhev",
+      "email": "t9221823420@gmail.com",
+      "homepage": "https://github.com/t9221823420"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "yozh/yii2-crud-v1": "@dev",
+	"sc0vu/web3.php": "@dev"
+  },
+  "extra": {
+    "_bootstrap": "yozh\\ethsc\\Bootstrap"
+  },
+  "autoload": {
+    "psr-4": {
+      "yozh\\ethsc\\": "src"
+    }
+  }
+}
