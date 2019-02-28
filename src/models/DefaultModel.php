@@ -9,7 +9,7 @@
 namespace yozh\ethsc\models;
 
 use Yii;
-use yozh\crud\models\BaseModel as ActiveRecord;
+use yozh\crud\models\BaseActiveRecord as ActiveRecord;
 
 class DefaultModel extends ActiveRecord
 {
@@ -18,7 +18,7 @@ class DefaultModel extends ActiveRecord
 		return '{{%yozh_ethsc}}';
 	}
 	
-	public function rules()
+	public function rules( $rules = [] )
 	{
 		return [
 			[ [ 'name', 'compiler', 'code', 'bytecode', 'abi', ], 'required' ],
